@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src='min.js'></script>
+    <meta charset="UTF-8">
+    <title>其他页面</title>
+</head>
+<body>
+<script src="blog.js"></script>
+<script src="update.js"></script>
+<script>
+
+    // 从 Markdown 文件中读取内容并调用函数更新
+    fetch('test.md')
+        .then(response => response.text())
+        .then(data => {
+            // 解析 Markdown 文件内容，这里假设 Markdown 文件的格式是标题和内容之间用换行符分隔
+            const [appIntroTitle, appIntroText, useMethodTitle, useMethodText] = data.split('\n');
+            const contentWithImages = appIntroText.replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="\$2" alt="\$1">');
+            appIntroText.innerHTML = contentWithImages;
+            updateContent(appIntroTitle, appIntroText, useMethodTitle, useMethodText);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+</body>
+</html>

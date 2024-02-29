@@ -1,0 +1,127 @@
+.content-section{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.image-style{
+    float: left;
+    width: 90px
+}
+.app-title {
+    font-size: 18px;
+    font-weight: 600
+}
+table{
+    font-size: 14px;
+    margin-top: 10px;
+    border-collapse: collapse;
+    line-height: 1.65;
+}
+.intro-part {
+    height: 90px;
+    margin-left: 20px;
+    margin-right:20px;
+    float: left
+}
+.link-part{
+    width: 82px;
+    height: 90px;
+    float:right;
+    margin-top: 20px;
+}
+.slides{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x:auto
+}
+th{
+    color: #00b19d;
+}
+td{
+    color: #555;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.title-content{
+    color:#00b19d;
+    font-weight:700;
+    width: 100%;
+    padding:2px 10px
+}
+.link-intro{
+    background-color: #00b19d;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(200, 243, 241);
+}
+.img-container {
+    box-shadow: 5px 5px 5px rgb(200, 243, 241); /* 水平偏移量，垂直偏移量，模糊半径，阴影颜色 */
+}
+.blog-content{
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 20px
+}
+.little-tittle{
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 10px
+}
+@media only screen and (max-width: 768px) {
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .intro-part {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .link-part {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .link-part > div {
+        margin-top: 10px;
+    }
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        display: block;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 350px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}

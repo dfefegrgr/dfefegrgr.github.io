@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src='min.js'></script>
+    <meta charset="UTF-8">
+    <title>其他页面</title>
+</head>
+<body>
+<script src="blog.js"></script>
+
+
+<script>
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     // 找到需要修改的第一个 section 元素
+    //     const section1 = document.querySelector('.section:nth-of-type(1)');
+    //     if (section1) {
+    //         section1.innerHTML = `
+    //         <h2>图灵自动电击器</h2>
+    //         <p>挂机app</p>
+    //     `;
+    //     }
+    //     // 找到需要修改的第二个 section 元素
+    //     const section2 = document.querySelector('.section:nth-of-type(2)');
+    //     if (section2) {
+    //         section2.innerHTML = `
+    //         <h2>使用方法</h2>
+    //         <p>这是新的内容2。</p>
+    //     `;
+    //     }
+    // });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('content.md')
+            .then(response => response.text())
+            .then(data => {
+                const sections = data.split('\n\n');
+                sections.forEach((sectionContent, index) => {
+                    const section = document.querySelector(`.section:nth-of-type(${index + 1})`);
+                    if (section) {
+                        const lines = sectionContent.split('\n');
+                        const header = lines[0];
+                        const content = lines.slice(1).join('\n');
+                        section.innerHTML = `
+                        <h2>${header}</h2>
+                        <p>${content}</p>
+                    `;
+                    }
+                });
+            });
+    });
+
+</script>
+</body>
+</html>

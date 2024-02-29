@@ -1,0 +1,78 @@
+*,body{
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #66C7B4;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 5px 10px;
+
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 45px;
+}
+main {
+    max-width: 740px;
+    margin: 20px auto;
+
+    /*background-color: #fff; !* 白色 *!*/
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    color: #333;
+}
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+p {
+    line-height: 1.6;
+}
+.comments{
+    padding: 10px 20px;
+}
+.app-introduction,.use-method{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.comments {
+    background-color: #fff;/* 修改为浅黄色 */
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; /* 很浅的灰色 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    .section, .comments {
+        padding: 10px;
+    }
+}

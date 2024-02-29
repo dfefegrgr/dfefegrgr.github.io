@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src='min.js'></script>
+    <meta charset="UTF-8">
+    <title>其他页面</title>
+</head>
+<body>
+<script src="blog.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 找到需要修改的第一个 section 元素
+        const section1 = document.querySelector('.section:nth-of-type(1)');
+        if (section1) {
+            section1.innerHTML = `
+            <h2>新的标题1</h2>
+            <p>这是新的内容1。</p>
+        `;
+        }
+        // 找到需要修改的第二个 section 元素
+        const section2 = document.querySelector('.section:nth-of-type(2)');
+        if (section2) {
+            section2.innerHTML = `
+            <h2>新的标题2</h2>
+            <p>这是新的内容2。</p>
+        `;
+        }
+    });
+</script>
+</body>
+</html>

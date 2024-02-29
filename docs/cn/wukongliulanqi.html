@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src='min.js'></script>
+    <meta charset="UTF-8">
+    <title>悟空浏览器</title>
+    <link rel="stylesheet" href="blogUpdate.css">
+</head>
+<body>
+<script src="blog.js"></script>
+<div class="content-section clearfix" >
+    <img class="image-style" src="https://pp.myapp.com/ma_icon/0/icon_54181951_1708593605/256" alt="" width="200" >
+    <div class="intro-part" >
+        <span class="app-title">悟空浏览器</span>
+        <table  class="table" >
+            <tr>
+                <th >兑换比例</th>
+                <td>10000金币：1元</td>
+            </tr>
+        </table>
+        <div  style="margin-top: 10px">
+            <span style="font-size: 12px;color: #555;margin-top: 10px"><i>备注：苹果手机很多活动都没有/仅供参考</i></span>
+        </div>
+
+    </div>
+    <div class="link-part">
+        <div><a href="https://aweme.snssdk.com/luckycat/aweme_fission/page/share_invite/?u_code=ODc5MDMzMjcwMzk=&aid=2329&landing_channel=invite_friend_page_qrcode&device_id=4482033435546144&enter_from=apprentice&utm_source=qrcode" class="link-intro">活动直达</a></div>
+        <div style="margin-top: 20px;"> <a  class="link-intro" href="#" >手机扫码</a></div>
+    </div>
+</div>
+<div class="useMethod-section">
+    <div  class="title-content" style="">> 应用截图</div>
+    <div class="slides" >
+        <div style="padding: 10px"><img class="img-container" src="../assets/images/pics/douyinrenwu.jpg" alt="" width="150" onclick="openModal(this.src)"></div>
+        <div  style="padding: 10px"><img class="img-container" src="../assets/images/pics/douyinlaxin.jpg" alt="" width="150" onclick="openModal(this.src)"></div>
+        <div  style="padding: 10px"><img class="img-container" src="../assets/images/pics/douyintixian.jpg" alt="" width="150" onclick="openModal(this.src)"></div>
+    </div>
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+
+
+    <div  class="title-content" >> 其他活动</div>
+    <div class="blog-content" >
+        <p><span class="little-tittle" >新人奖励</span><span>27元左右（拿不到那么多</span></p>
+        <p><span class="little-tittle" >日常活动</span><span>不用等晚上十二点兑换金币</span></p>
+
+    </div>
+
+</div>
+
+<script src="blogUpdate.js"></script>
+<script>
+    function openModal(src) {
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = src;
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+</body>
+</html>

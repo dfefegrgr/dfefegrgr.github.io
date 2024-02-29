@@ -1,0 +1,150 @@
+{
+  "sites": [
+    {
+      "id": "抖音系",
+      "siteList": [
+        {
+          "address": "# ",
+          "name": "抖音极速版",
+          "description": "短视频网站",
+          "img": "https://s1.aigei.com/src/img/png/91/91e73ffa16d34508b5933e068883ad47.png?imageMogr2/auto-orient/thumbnail/!282x282r/gravity/Center/crop/282x282/quality/85/%7CimageView2/2/w/282&e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:wYn5MkQJvqR2fVadrn-Mh6LjnlI="
+        },
+        {
+          "address": "# ",
+          "name": "番茄畅听",
+          "description": "",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_54052988_1708943785/256"
+        },
+        {
+          "address": "# ",
+          "name": "西瓜视频",
+          "description": "视频网站",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_42294302_1709114988/256"
+        },
+        {
+          "address": "# ",
+          "name": "悟空浏览器",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_54181951_1709178671/256"
+        },
+        {
+          "address": "# ",
+          "name": "番茄免费小说",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_53860780_1708999073/256"
+        },
+        {
+          "address": "# ",
+          "name": "头条搜索极速版",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_42392809_1709083500/256"
+        }
+      ]
+    },
+    {
+      "id": "阿里系",
+      "siteList": [
+        {
+          "address": "# ",
+          "name": "支付宝",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_5294_1705571385/256"
+        },
+        {
+          "address": "# ",
+          "name": "UC浏览器极速版",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_52482987_1706167319/256"
+        },
+        {
+          "address": "# ",
+          "name": "闲鱼",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_42335780_1709109328/256"
+        },
+        {
+          "address": "# ",
+          "name": "高德地图",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_7678_1709087383/256 "
+        },
+        {
+          "address": "# ",
+          "name": "点淘",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_52823701_1709021986/256"
+        }
+      ]
+    },
+    {
+      "id": "百度系",
+      "siteList": [
+        {
+          "address": "# ",
+          "name": "百度极速版",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_52484703_1708936499/256"
+        },
+        {
+          "address": "# ",
+          "name": "百度网盘",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_116071_1708654369/256"
+        }
+      ]
+    },
+    {
+      "id": "抠门系",
+      "siteList": [
+        {
+          "address": " #",
+          "name": "美团",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_11109_1708583371/256"
+        },
+        {
+          "address": " #",
+          "name": "拼多多",
+          "description": " ",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_12181027_1709174718/256"
+        }
+      ]
+    },
+    {
+      "id": "三毛游戏",
+      "siteList": [
+        {
+          "address": "#",
+          "name": "小熊请上车",
+          "description": "",
+          "img": "https://image.52pk.com/52pk/imgfile/20240202/02084002arvh.png"
+        },
+        {
+          "address": "#",
+          "name": "向往的退休生活",
+          "description": " ",
+          "img": "https://itopdog.oscaches.com/itopdog/imgfile/20240202/02103407d7t7.jpg"
+        }
+
+      ]
+    },
+    {
+      "id": "辅助工具",
+      "siteList": [
+        {
+          "address": "#",
+          "name": "图灵自动点击器 ",
+          "description": "",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_54227804_1702365990/256"
+        },
+        {
+          "address": "#",
+          "name": "号易",
+          "description": "",
+          "img": "https://pp.myapp.com/ma_icon/0/icon_54347044_1700207960/256"
+        }
+      ]
+    }
+
+  ]
+}

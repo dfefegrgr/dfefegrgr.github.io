@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    </style>
+    <script src='min.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客文章</title>
+    <link rel="stylesheet" href="ceping.css">
+
+</head>
+<body>
+<nav>
+    <a href="#">首页</a> | <a href="#">关于</a> | <a href="#">联系</a>
+</nav>
++
+<main>
+    <div class="app-introduction" style="display: flex;flex-direction: row;padding:20px">
+        <div class="imgwrap"><img src="tlzddjq.png" alt=" " width="100"></div>
+        <div>
+            <span>图灵自动点击器</span>
+           <div> <span>挂机软件，非常好用</span></div>
+        <div>
+            <button>链接直达</button>
+            <button>扫码下载</button>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="use-method" style="padding:20px">
+        <div>
+            <span>亮点</span>
+            <div class="slides" style="display: flex;flex-direction: row;width: 100%;overflow-x:auto ">
+                <div class="slide" style="padding: 10px"><span>douyin</span><img src="douyin.png" alt="Image 1" width="100"></div>
+                <div class="slide" style="padding: 10px"><img src="fanqie.png" alt="Image 2"></div>
+                <div class="slide" style="padding: 10px"><img src="hongguo.png" alt="Image 3"></div>
+                <div class="slide" style="padding: 10px"><img src="hongguo.png" alt="Image 3"></div>
+                <div class="slide" style="padding: 10px"><img src="hongguo.png" alt="Image 3"></div>
+                <div class="slide" style="padding: 10px"><img src="hongguo.png" alt="Image 3"></div>
+                <div class="slide" style="padding: 10px"><img src="hongguo.png" alt="Image 3"></div>
+
+                <!-- Add more slides as needed -->
+            </div>
+
+        </div>
+
+        <div style="padding: 10px">
+            <span>吐槽</span>
+            <div> 需要看广告解锁使用时长，解锁一次只能用4个小时 </div>
+            <div>  </div>
+        </div>
+
+    </div>
+
+    <div class="comments">
+        <div id="vcomments"></div>
+        <script>
+            function initValine(){
+                new Valine({
+                    el: '#vcomments',
+                    avatar:' ',
+                    appId: 'fpFVTETTTocPTl92vZ3kHBKG-gzGzoHsz',
+                    appKey: 'AU4TNUeLz87GbjWlvJ00UoSa'
+                });
+            }
+            initValine();
+        </script>
+    </div>
+</main>
+</body>
+</html>
