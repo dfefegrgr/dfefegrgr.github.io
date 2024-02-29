@@ -2,106 +2,7 @@
 <html lang="zh">
 
 <head>
-    <style>
-        body{
-            background-color: lightgoldenrodyellow;
-        }
-        .github-edit-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 999; /* 确保按钮在其他元素上面 */
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-            border: none;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        .github-edit-button:hover {
-            background-color: #2980b9;
-        }
-        .linecons-star,.title{
-            color: #fff;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        .title-logo{
-            color: #fff;
-            font-size: 24px;
-            font-weight: 700;
-
-        }
-        .logo{
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-        .title:hover{
-            color: #FFCAD4;
-        }
-        #main-menu .smooth {
-            /*border-bottom: 3px solid #F6F5F5;*/
-        }
-
-
-        .linecons-tag,.tag-title{
-            background-color: #66C7B4;
-            color: #fff;
-            margin-right: 10px;
-            font-size: 20px;
-            font-weight: 700;
-            padding: 5px 10px
-        }
-
-        .row{
-            width: 1100px;
-            border-top: 2px solid rgba(102, 199, 180);
-            margin-bottom: 20px;
-        }
-        .nx-list{
-            padding: 10px;
-        }
-        .nx-list li{
-            line-height: 1.3;
-            list-style: none;
-            margin: 10px 0;
-            padding-left: 10px;
-        }
-        .wx-icon:hover + .imgvxQRcode {
-            display: block;
-        }
-        .imgvxQRcode{
-            background-color: #AEC5EB;
-            padding: 20px;
-            display: none;
-            position: absolute;
-            top: 90px;
-            left: 50px;
-            z-index: 999;
-        }
-        .imgvxQRcode::before {
-            content: " ";
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            /*margin-left: -10px;*/
-            border-width: 10px;
-            border-style: solid;
-            border-color:  transparent transparent #AEC5EB transparent;
-        }
-
-        .wx-icon {
-            cursor: pointer;
-        }
-
-
-
-    </style>
+    <link rel="stylesheet" href="example.css">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
     </script>
     <script>
@@ -114,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="viggo"/>
-    <title>羊毛网址导航</title>
+    <title>好羊毛应用导航</title>
     <meta name="keywords" content="推荐导航">
     <meta name="description" content="推荐导航">
     <link rel="shortcut icon" href="../assets/images/favicon.jpg">
@@ -185,7 +86,7 @@
         </nav>
         <!-- 网址 -->
 
-        <div  style="width: 1100px">
+        <div  class="xexe">
             <span class=" linecons-tag" id="公告">置顶</span>
             <div class="row" >
                 <div class="col-sm-3">
@@ -206,17 +107,16 @@
         </div>
 
 
-        <div th:each="site : ${results.sites}"  >
+        <div th:each="site : ${results.sites}"  class="xexe">
             <span class="linecons-tag" style="margin-right: 7px;" th:text="${site.id}" th:attr="id=${site.id}">
                 <i class="linecons-tag" style="margin-right: 7px;" th:attr="id=${site.id}"></i>
             </span>
-            <div class="row" style="width: 1100px;border-top: 2px solid #66C7B4">
+            <div class="row" >
                 <div class="col-sm-3" th:each="addr : ${site.siteList}">
                     <div class="xe-widget xe-conversations box2 label-info"
                          th:attr="data-original-title=${addr.address}"
                          th:onclick="'javascript:addropen(\''+${addr.address}+'\');'"
-                         data-placement="bottom" title="" data-original-title=""
-                    >
+                         data-placement="bottom" title="" data-original-title="">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="" th:attr="src=${addr.img}" class="img-circle" width="50">
@@ -238,7 +138,8 @@
         <br/>
         <footer class="main-footer sticky footer-type-1">
             <div class="footer-inner">
-                <div class="footer-text" id="footer-text">
+                <div class="footer-text" id="footer-text" style="font-size: 18px; font-weight: 600">
+
                 </div>
                 <div class="go-up">
                     <a href="#" rel="go-top">
@@ -253,7 +154,7 @@
             // 获取footer-text的元素
             var footerText = document.getElementById("footer-text");
             // 修改footer-text的内容
-            footerText.innerHTML = "&copy; " + year + " <a href='https://mikusugar.me/'>追赶风车</a>" + " powered by " + "<a href='https://github.com/WebStackPage/WebStackPage.github.io'>WebStack</a>";
+            footerText.innerHTML = "&copy; " + year + " <a href='https://mikusugar.me/'>好羊羊</a>" + " powered by " + "<a href='https://github.com/WebStackPage/WebStackPage.github.io'>WebStack</a>"+" | 备案号xxxx";
         </script>
     </div>
 </div>
@@ -329,9 +230,9 @@
 <script src="../assets/js/xenon-toggles.js"></script>
 <!-- JavaScripts initializations and stuff -->
 <script src="../assets/js/xenon-custom.js"></script>
-<a href="https://github.com/MikuSugar/SugarHome/edit/master/src/main/resources/in.json" class="github-edit-button">
-    编辑
-</a>
+<!--<a href="https://github.com/MikuSugar/SugarHome/edit/master/src/main/resources/in.json" class="github-edit-button">-->
+<!--    编辑-->
+<!--</a>-->
 </body>
 
 </html>
